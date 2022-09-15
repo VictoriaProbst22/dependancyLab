@@ -86,14 +86,14 @@ public class StreamLabService {
     	Role customerRole = roles.findAll().stream().filter(r -> r.getName().equals("Customer")).findFirst().orElse(null);
     	List<User> customers = users.findAll().stream().filter(u -> u.getRoles().contains(customerRole)).toList();
 
-    	return customers;
+    	return null;
     }
 
     public List<Product> ProblemEight()
     {
         // Write a query that retrieves all of the products in the shopping cart of the user who has the email "afton@gmail.com".
         // Return the list
-    	return shoppingcartitems.findBy();
+    	return null;
     }
 
     public long ProblemNine()
