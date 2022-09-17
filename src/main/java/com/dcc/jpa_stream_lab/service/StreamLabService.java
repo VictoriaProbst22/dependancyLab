@@ -1,10 +1,8 @@
 package com.dcc.jpa_stream_lab.service;
 
 import java.util.Calendar;
-import java.util.Date;
 import java.util.GregorianCalendar;
 import java.util.List;
-import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -64,9 +62,12 @@ public class StreamLabService {
         // Return the list
         // Research 'java compare dates'
         // You may need to use the helper classes imported above!
-    	//GregorianCalendar gcal = new GregorianCalendar();
-        //return users.findAll().stream().filter(u ->u.getRegistrationDate().before(2016)).toList();
+            GregorianCalendar today = new GregorianCalendar();
+            GregorianCalendar user= new GregorianCalendar(2016, Calendar.JANUARY, 1);
+            
+
         return null;
+
     }
 
     public List<User> ProblemSix()
